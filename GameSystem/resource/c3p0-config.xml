@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/gameinfo
+		</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<!-- 连接池初始化的时候的连接数 -->
+		<property name="initialPoolSize">5</property>
+		<!-- 连接池中连接的最大个数 -->
+		<property name="maxPoolSize">20</property>
+		<!-- 用户获得连接Connection的时候，如果有连接就获得，没有就等待的时间，如果超时就报异常 -->
+		<property name="maxIdleTime">5000</property>
+		<!-- 连接池中连接的最小个数 -->
+		<property name="minPoolSize">5</property>
+	</default-config>
+</c3p0-config>
